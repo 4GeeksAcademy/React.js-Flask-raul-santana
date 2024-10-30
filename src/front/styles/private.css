@@ -1,0 +1,95 @@
+/* private.css */
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: white;
+    color: #333;
+}
+
+h2 {
+    color: red;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.vip-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    border-radius: 15px;
+    background-color: rgba(214, 214, 214, 0.9);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    margin: 50px auto;
+    width: 80%;
+    max-width: 800px;
+}
+
+.vip-container img {
+    border-radius: 15px;
+    margin: 20px 0;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.vip-container p {
+    font-size: 1.2rem;
+    color: #4a4a4a;
+    text-align: center;
+}
+
+.private-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.private-container p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    background: red;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 30px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.3s ease;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background: red;
+    transform: scale(1.05);
+}
+
+button:active {
+    background: red;
+    transform: scale(1.02);
+}
+
+@media screen and (max-width: 768px) {
+    .vip-container {
+        padding: 30px;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    button {
+        padding: 8px 20px;
+        font-size: 1rem;
+    }
+}
